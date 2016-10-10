@@ -48,9 +48,11 @@ public class SelectTest {
 					rs.close();
 				}
 				if(stmt != null ){
-					stmt.close();}
+					stmt.close();
+				}
 				if(conn != null ){
-				conn.close();}
+				conn.close();
+				}
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
