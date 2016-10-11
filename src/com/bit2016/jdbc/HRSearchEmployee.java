@@ -34,7 +34,7 @@ public class HRSearchEmployee {
 			 
 			 pstmt.setString(1, "'%'"+name+"'%'");
 //			 pstmt.setString(2, "%"+name+"%");
-			 rs = pstmt.executeQuery(sql);
+			 rs = pstmt.executeQuery();
 			 while(rs.next()){
 				 //column 에 있는 데이터 타입대로 적어주면 됨. 
 				 Long employeeId = rs.getLong(1);
